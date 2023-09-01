@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #69f9f3;
+  padding: 1rem;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+.container {
+  position: relative;
+}
+.notifications {
+  border-left: 2px solid #037c97;
+  padding: 1.5rem;
+  max-width: 100%;
+  border-radius: 8px;
+  text-align: center;
+  position: absolute;
+  right: -450px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: rgb(104, 213, 223);
+  color: #fff;
+  transition: all 0.2s;
+}
+.active {
+  transition: all 0.2s;
+  right: 0px;
+}
+.notifications h2 {
+  margin: 0;
+}
+.notifications #close_btn {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.notifications #close_btn:hover {
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+.table-container h1 {
+  text-align: center;
+  margin-top: 0;
+}
+.table-container table {
+  border: 1px solid #000;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-container table td,
+.table-container table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.table-container table td {
+  cursor: pointer;
+}
+.table-container table td:nth-child(3) {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table-container table td:nth-child(1),
+td:nth-child(2) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 98px;
+}
+.table-container table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-container table tr:hover {
+  background-color: #c7c7c7;
+}
+
+.table-container table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+.empty {
+  text-align: center;
+}
+input::placeholder {
+  font-size: 14px;
+}
+
+.inputField input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.filterInput {
+  width: 20%;
+}
+.filterInput label {
+  white-space: nowrap;
+}
+.filterInput input {
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #b1b1b1;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+#form .btn {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.inputField {
+  margin: 0 0.5% 0 0;
+  flex: 1 1 245px;
+}
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0.5%;
+}
