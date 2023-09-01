@@ -23,7 +23,7 @@ const MultipleForm = ({
       languageUse === "" ||
       languageFull_form === ""
     ) {
-      alert("Click on Any Table Row");
+      alert("Click on Any Table Datas and Filter data Row");
     } else {
       setTimeout(() => {
         setIsActive(isActive);
